@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="37.99" height="38.79" viewBox="0 0 37.99 38.79">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>unity-template</title>
+  <g>
+    <path class="cls-1" d="M29.65,35H8.34a5,5,0,0,1-5-5V8.66a5,5,0,0,1,5-5h21.3a5,5,0,0,1,5,5V30A5,5,0,0,1,29.65,35ZM8.34,5.08A3.59,3.59,0,0,0,4.76,8.66V30a3.59,3.59,0,0,0,3.58,3.58h21.3A3.59,3.59,0,0,0,33.23,30V8.66a3.59,3.59,0,0,0-3.58-3.58H8.34Z"/>
+    <rect class="cls-1" x="18.25" y="10.86" width="1.43" height="16.9" transform="translate(-8.1 19.06) rotate(-45)"/>
+    <rect class="cls-1" x="10.51" y="18.59" width="16.9" height="1.43" transform="translate(-8.1 19.06) rotate(-45)"/>
+  </g>
+</svg>
