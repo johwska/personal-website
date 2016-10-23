@@ -36,7 +36,6 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 canvas {
@@ -46,10 +45,9 @@ canvas {
 }
 
 
-#information {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 35px 18px;
+.information {
+  box-sizing: border-box;
+  margin: 65px auto;
 
   -webkit-touch-callout: auto;
   -webkit-user-select: auto;
@@ -58,14 +56,21 @@ canvas {
   -ms-user-select: auto;
   user-select: auto;
 
-  height: 100%;
+  height: calc(100% - 130px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  /*background-color: red;*/
+}
+.open .information {
   display: table;
 }
 .information__centered {
+  padding: 35px 18px;
   vertical-align: middle;
-  display: none;
-}
-.open .information__centered {
   display: table-cell;
 }
 .information__centered p {
@@ -73,13 +78,16 @@ canvas {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
+  margin: 0 auto;
   padding-top: 0;
   margin-bottom: 20px;
+  max-width: 1150px;
 
-  font-size: 45px;
+  font-size: 44px;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 500;
   color: white;
+  text-shadow: 1px 1px 3px blue;
 }
 
 @media (max-width: 1000px) {
