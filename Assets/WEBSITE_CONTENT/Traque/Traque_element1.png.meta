@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 3ce376ebd7d94418194d24762057b1e0
-timeCreated: 1476809178
+guid: 23c5d6c982e744a539fdff354e8ede62
+timeCreated: 1477094016
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -45,9 +45,9 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: -1
+  textureType: 0
   buildTargetSettings:
   - buildTarget: WebGL
     maxTextureSize: 2048
