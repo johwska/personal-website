@@ -21,7 +21,7 @@ public class moveOnScroll : MonoBehaviour {
 		}
 		center /= group.transform.childCount; //center is average center of children
 
-		//Now you have a center, calculate the bounds by creating a zero sized 'Bounds',
+		// Now you have a center, calculate the bounds by creating a zero sized 'Bounds',
 		Bounds bounds = new Bounds(center,Vector3.zero); 
 
 		foreach (Transform child in group.transform) {
@@ -46,11 +46,11 @@ public class moveOnScroll : MonoBehaviour {
 		}
 		if (previosPlayerPosition != transform.position.z) {
 			float positionDiff = (initialPlayerPosition - transform.position.z) / spaceBounds.size.z * -1f;
-			Debug.Log (positionDiff);
+			// Debug.Log (positionDiff);
 			positionDiff = Mathf.Clamp(positionDiff, 0f, 1f);
-			//      Debug.Log (positionDiff);
+			// Debug.Log (positionDiff);
 			scrollBar.value = 1f - positionDiff;
-			Debug.Log (scrollBar.value);
+			// Debug.Log (scrollBar.value);
 			previosScrollPosition = scrollBar.value;
 			previosPlayerPosition = transform.position.z;
 		}
