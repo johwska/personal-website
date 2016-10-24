@@ -15,6 +15,51 @@
 
     <div class="game-container">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="%UNITY_HEIGHT%px" width="%UNITY_WIDTH%px"></canvas>
+      <div id="loading">
+        <svg id="loading__spinner" viewBox="25 25 50 50">
+          <defs>
+          <style>
+            .loader_rotation, .loader_bg {
+              stroke-linecap: square;
+              stroke-width: 1.5;
+              stroke: white;
+              fill: none;
+            }
+            .loader_rotation {
+              stroke-dasharray: 1,200;
+              stroke-dashoffset: 0;
+              transform-origin: center center;
+              transition: opacity 0.5s;
+              animation: dash 1.5s ease-in-out infinite, rotate 2s linear infinite;
+            }
+            .loader_bg {
+              opacity: 0.3;
+            }
+            @keyframes rotate {
+              100%{
+                transform: rotate(360deg);
+              }
+            }
+            @keyframes dash {
+              0%{
+                stroke-dasharray: 1,200;
+                stroke-dashoffset: 0;
+              }
+              50%{
+                stroke-dasharray: 89,200;
+                stroke-dashoffset: -35px;
+              }
+              100%{
+                stroke-dasharray: 89,200;
+                stroke-dashoffset: -124px;
+              }
+            }
+          </style>
+          </defs>
+          <circle class="loader_rotation" cx="50" cy="50" r="20"/>
+          <circle class="loader_bg" cx="50" cy="50" r="20"/>
+        </svg>
+      </div>
     </div>
 
     <div class="information">
