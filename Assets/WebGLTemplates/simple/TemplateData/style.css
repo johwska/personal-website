@@ -41,7 +41,7 @@ html, body {
 canvas {
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: #0000FFFF;
 }
 
 
@@ -188,7 +188,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #0000FFFF;
   text-align: center;
   opacity: 1;
   transition: opacity 1s ease-in-out;
