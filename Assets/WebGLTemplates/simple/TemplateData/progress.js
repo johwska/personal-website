@@ -7,7 +7,7 @@ function UnityProgress (dom) {
   this.Clear = function() {
     window.setTimeout(function() {
       document.getElementById("loading").className = "ready";
-    }, 2000)
+    }, 3000)
   }
 
   this.Update = function() {}
