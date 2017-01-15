@@ -188,7 +188,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #0000FFFF;
+  background-color: #0000FF;
   text-align: center;
   opacity: 1;
   transition: opacity 1s ease-in-out;
