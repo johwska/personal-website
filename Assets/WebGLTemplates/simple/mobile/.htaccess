@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_USER_AGENT} "!(android|blackberry|googlebot-mobile|iemobile|ipad|iphone|ipod|opera mobile|palmos|webos)" [NC]
+RewriteCond %{REQUEST_URI} ^/mobile/*
+
+RewriteRule ^ http://%{HTTP_HOST} [R,L]
