@@ -21,65 +21,49 @@
     <meta name="msapplication-config" content="/TemplateData/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <style>
-      body, html {
+      html {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      body {
         padding: 0;
         margin: 0;
         width: 100%;
         height: 100%;
         position: fixed;
         background-color: #0000FF;
+        padding: 5vw;
+        box-sizing: border-box;
       }
       #main {
         width: 100%;
         height: 100%;
         text-decoration: none;
+        position: relative;
         display: block;
       }
-      #card {
+      #picture {
         position: absolute;
         width: 100%;
-        height: 92%;
-        background-image: url('/mobile/mobile-version-background.gif');
-        background-size: auto 106%;
+        height: 100%;
+        background-image: url('/mobile/mobile-version-gif-final-cut.gif');
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: top center;
-      }
-      #border {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 0px;
-        padding-bottom: 13%;
-        overflow: hidden;
-      }
-      #border img {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        display: block;
+        background-position: center center;
       }
     </style>
   </head>
-
   <body>
 
     <a id="main" href="http://jjaskowska.com">
-      <div id="border">
-        <img src="/mobile/mobile-version-background.gif" />
-      </div>
-      <div id="card"></div>
+      <div id="picture"></div>
     </a>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-90376634-1', 'auto');
-      ga('send', 'pageview');
-
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-90376634-1', 'auto'); ga('send', 'pageview');
     </script>
-  </body>
 
+  </body>
 </html>
